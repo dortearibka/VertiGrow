@@ -1,4 +1,5 @@
 import React from 'react'
+// import React from 'react'
 import Navbar from '../Components/Navbar'
 import SectionLayananEdukasi from '../Sections/Layanan/SectionLayananEdukasi'
 import SectionLayananManajemen from '../Sections/Layanan/SectionLayananManajemen'

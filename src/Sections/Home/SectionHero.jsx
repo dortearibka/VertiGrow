@@ -22,4 +22,4 @@ export default function SectionHero() {
       <img src='https://picsum.photos/200/200' alt="gambar vertigrow" className='w-1/2 rounded-xl'/>
     </section>
   )
-}
+

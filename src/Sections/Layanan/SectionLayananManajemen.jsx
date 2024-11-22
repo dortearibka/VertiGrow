@@ -17,4 +17,3 @@ export default function SectionLayananManajemen() {
       <img src='https://picsum.photos/200/200' alt="" className='w-1/2 h-80 object-cover' />
     </section>
   )
-}
