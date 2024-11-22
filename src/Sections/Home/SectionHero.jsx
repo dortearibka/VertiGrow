@@ -1,27 +1,25 @@
-import Hero from '../../assets/Vertikultur.png';
+import React from 'react'
+import Hero from '/MSIB IL/Apalagi/src/assets/Vertikultur.png'
 
 export default function SectionHero() {
   return (
-    <section className="container flex flex-col-reverse lg:flex-row items-center py-20 gap-10 mt-20 px-6 lg:px-0">
+    <section className='container flex py-20 gap-10 '>
+      
       {/* Kalimat Hero */}
-      <div className="flex flex-col gap-6 lg:text-left">
-        <h3 className="text-3xl sm:text-4xl lg:text-5xl font-sans font-bold text-[#387F39]">
+      <div className='flex flex-col gap-10'>
+        <h3 className='text-5xl font-sans font-bold text-green-500'>
           Selamat Datang di Vertigrow
         </h3>
-        <p className="text-lg sm:text-xl lg:text-2xl text-neutral-800">
+        <p className='text-2xl font-semibold text-neutral-600'>
           Ayo bergabung bersama kami dalam mewujudkan masa depan pertanian Indonesia yang lebih produktif dan berkelanjutan.
         </p>
-        <button className="bg-[#387F39] rounded-md hover:bg-green-900 w-40 sm:w-48 px-2 py-2 text-[#F8F8F9] text-lg sm:text-xl lg:mx-0">
+        <button className='bg-green-500 rounded-md w-52 px-2 py-2 text-white text-xl'>
           Ayo bergabung!
         </button>
       </div>
-
+      
       {/* Gambar */}
-      <img
-        src={Hero}
-        alt="gambar vertigrow"
-        className="w-full lg:w-1/2 rounded-xl"
-      />
+      <img src='https://picsum.photos/200/200' alt="gambar vertigrow" className='w-1/2 rounded-xl'/>
     </section>
-  );
-}
+  )
+

@@ -1,31 +1,22 @@
-import Edukasi from '../../assets/Layanan/Edukasi.png';
+import React from 'react'
+import Edukasi from '/MSIB IL/Apalagi/src/assets/Layanan/Edukasi.png'
 
 export default function SectionLayananEdukasi() {
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-center justify-between py-20 gap-16 mt-36">
-      {/* Image Section */}
-      <div className="w-full md:w-1/2 overflow-hidden rounded-lg shadow-lg">
-        <img 
-          src={Edukasi} 
-          alt="Edukasi Vertikultur" 
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <section className='container flex py-20 gap-16'>
+        {/* Layanan Edukasi */}
+        <img src='https://picsum.photos/200/200' alt="" className='w-1/2 h-80 object-cover' />
 
-      {/* Text Section */}
-      <div className="w-full md:w-1/2 flex flex-col gap-8">
-        <p className="text-3xl md:text-4xl font-semibold text-green-600 leading-tight md:text-left">
-          Edukasi Vertikultur
-        </p>
-        <p className="text-lg text-neutral-700 md:text-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatem aperiam est dolorum voluptate quibusdam minus. Id deleniti alias minima omnis reprehenderit? At nihil, magnam, numquam maiores amet laboriosam, unde cupiditate praesentium eveniet fugiat beatae! Recusandae dolorem doloribus et, quibusdam ex provident eaque voluptates at possimus quos atque adipisci quaerat?
-        </p>
-        <div className="flex md:justify-start">
-          <button className=" bg-[#387F39] text-white w-50 py-3 px-6 rounded-lg text-xl font-semibold hover:bg-green-700 focus:outline-none transition duration-300">
-            Jelajahi
-          </button>
+        {/* kalimat */}
+        <div className='flex flex-col gap-10'>
+            <p className='text-3xl font-semibold text-green-500'>
+                Edukasi Vertikultur
+            </p>
+            <p className=''>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, harum nesciunt! Libero eius exercitationem sint soluta quia eaque quidem veniam deleniti distinctio magni iste rem totam eos cumque possimus nobis animi nisi quod, non, aspernatur et ratione eveniet amet neque! Quod, vel? Placeat alias laboriosam hic quas obcaecati, dolores, et dolorum voluptates cum quia id in, facilis quam repudiandae eius amet? Totam rerum animi fugiat, quibusdam at autem illum modi temporibus nisi iste reprehenderit culpa sit velit expedita vero error?
+            </p>
         </div>
-      </div>
+
     </section>
-  );
-}
+  )
+

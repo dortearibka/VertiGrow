@@ -1,69 +1,47 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Edukasi from '../../assets/Layanan/Edukasi.png';
-import Chatbot from '../../assets/Layanan/Chatbot.jpg';
-import Manajemen from '../../assets/Layanan/Manajemen.png';
+import React from 'react'
 
 export default function SectionKeunggulan() {
   return (
-    <section className="flex justify-center my-28 px-6">
-      <div className="w-full max-w-7xl">
-        {/* Judul */}
-        <p className="font-semibold text-center text-2xl sm:text-3xl text-neutral-800 mb-10">
-          Mengapa Memilih Kami?
+    <section className='container bg-neutral-100 flex flex-col items-center py-16 gap-16'>
+        {/* Teks keunggulan */}
+        <p className='text-3xl font-semibold text-green-500'>
+            Kenapa harus memilih kami?
         </p>
 
-        {/* Kontainer Kartu */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-          {/* Kartu 1 */}
-          <Card className="relative overflow-hidden rounded-lg">
-            <Card.Img 
-              variant="top" 
-              src={Edukasi} 
-              className="h-full w-full object-cover rounded-t-lg" 
-            />
-            {/* Overlay Gradasi */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black opacity-70"></div>
-            <Card.Body className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
-              <Card.Title className="text-white text-lg md:text-xl font-semibold">
-                500+ jenis tanaman yang bisa dipelajari
-              </Card.Title>
-            </Card.Body>
-          </Card>
+        {/* cardbox */}
+        <div className='flex flex-col items-center'>
+            {/* cardbox keunggulan baris 1 */}
+            <div className='flex items-center gap-10'>
+                {/* jumlah materi */}
+                <div className='border-2 rounded-xl border-green-500 flex flex-col items-center justify-center p-5 gap-5 w-80 h-80'>
+                    <img src="https://picsum.photos/100/100" alt="" />
+                    <p className='text-xl text-center'>
+                        500+ materi tanaman yang bisa diakses
+                    </p>
+                </div>
 
-          {/* Kartu 2 */}
-          <Card className="relative overflow-hidden rounded-lg">
-            <Card.Img 
-              variant="top" 
-              src={Manajemen} 
-              className="h-full w-full object-cover rounded-t-lg" 
-            />
-            {/* Overlay Gradasi */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black opacity-70"></div>
-            <Card.Body className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
-              <Card.Title className="text-white text-lg md:text-xl font-semibold">
-                Sistem pembelajaran yang menyeluruh
-              </Card.Title>
-            </Card.Body>
-          </Card>
+                {/* aksesibilitas yang mudah */}
+                <div className='border-2 rounded-xl border-green-500 flex flex-col items-center justify-center p-5 gap-5 w-80 h-80'>
+                    <img src="https://picsum.photos/100/100" alt="" />
+                    <p className='text-xl text-center'>
+                    aksesibilitas yang ramah user
+                    </p>
+                </div>
 
-          {/* Kartu 3 */}
-          <Card className="relative overflow-hidden rounded-lg">
-            <Card.Img 
-              variant="top" 
-              src={Chatbot} 
-              className="h-full w-full object-cover rounded-t-lg" 
-            />
-            {/* Overlay Gradasi */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black opacity-70"></div>
-            <Card.Body className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
-              <Card.Title className="text-white text-lg md:text-xl font-semibold">
-                ChatBot AI yang relevan
-              </Card.Title>
-            </Card.Body>
-          </Card>
+                {/* materi yang lengkap */}
+                <div className='border-2 rounded-xl border-green-500 flex flex-col items-center justify-center p-5 gap-5 w-80 h-80'>
+                    <img src="https://picsum.photos/100/100" alt="" />
+                    <p className='text-xl text-center'>
+                    materi yang lengkap dan terstruktur
+                    </p>
+                </div>
+
+            
+            </div>
+
+            {/* cardbox keunggulan baris 2 */}
         </div>
-      </div>
+        
     </section>
-  );
-}
+  )
+

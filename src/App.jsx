@@ -1,20 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/Tentang";
-import Layanan from "./Pages/Layanan";
-import Masuk from "./Pages/Masuk";
-import Daftar from "./Pages/Daftar";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import About from './Pages/About'
+import Layanan from './Pages/Layanan'
+import Login from './Pages/Login'
+import Daftar from './Pages/Daftar'
+import Home from './Pages/Home'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/tentang" element={<About/>} />
-        <Route path="/layanan" element={<Layanan/>} />
-        <Route path="/masuk" element={<Masuk/>} />
-        <Route path="/daftar" element={<Daftar/>}/>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/layanan' element={<Layanan/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/daftar' element={<Daftar/>} />
       </Routes>
     </BrowserRouter>
   )

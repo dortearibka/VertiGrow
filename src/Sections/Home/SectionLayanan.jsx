@@ -1,82 +1,75 @@
-import Card from 'react-bootstrap/Card';
-import Edukasi from '../../assets/Layanan/Edukasi.png';
-import Chatbot from '../../assets/Layanan/Chatbot.jpg';
-import Manajemen from '../../assets/Layanan/Manajemen.png';
+import React from 'react'
+import Edukasi from '/MSIB IL/Apalagi/src/assets/Layanan/Edukasi.png'
+import Manajemen from '/MSIB IL/Apalagi/src/assets/Layanan/Manajemen.png'
+import Chatbot from '/MSIB IL/Apalagi/src/assets/Layanan/Chatbot.jpg'
 
-function SectionLayanan() {
+export default function SectionLayanan() {
   return (
-    <section className="flex justify-center my-28 px-6">
-      <div className="w-full max-w-7xl">
-        {/* Judul */}
-        <p className="font-semibold text-center text-2xl md:text-3xl text-neutral-800 mb-10">
-          Layanan Kami
+    <section className='container flex flex-col items-center py-16 gap-16'>
+        {/* Teks Layanan */}
+        <p className='text-3xl text-green-500 font-semibold'>
+            Apa yang bisa kamu dapatkan?
         </p>
 
-        {/* Kontainer Kartu */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Kartu 1 */}
-          <Card className="shadow-lg">
-            <Card.Img
-              variant="top"
-              src={Edukasi}
-              className="h-48 w-full object-cover rounded-t-lg"
-            />
-            <Card.Body>
-              <Card.Title className="text-lg font-bold text-neutral-800">
-                Panduan Vertikultur
-              </Card.Title>
-              <Card.Text className="text-sm text-neutral-600">
-                Panduan praktis dan terstruktur untuk tanaman anda
-              </Card.Text>
-              <button className="bg-[#387F39] text-white px-4 py-2 mt-4 rounded-lg hover:bg-green-900 focus:outline-none">
-                Jelajahi
-              </button>
-            </Card.Body>
-          </Card>
+        {/* Cardbox layanan */}
+        <div className='flex justify-between items-center gap-16'>
 
-          {/* Kartu 2 */}
-          <Card className="shadow-lg">
-            <Card.Img
-              variant="top"
-              src={Chatbot}
-              className="h-48 w-full object-cover rounded-t-lg"
-            />
-            <Card.Body>
-              <Card.Title className="text-lg font-bold text-neutral-800">
-                Chatbot AI
-              </Card.Title>
-              <Card.Text className="text-sm text-neutral-600">
-                Temukan solusi masalah anda dengan bantuan AI
-              </Card.Text>
-              <button className="bg-[#387F39] text-white px-4 py-2 mt-4 rounded-lg hover:bg-green-900 focus:outline-none">
-                Jelajahi
-              </button>
-            </Card.Body>
-          </Card>
+            {/* Edukasi Vertikultur */}
+            <div className='card bg-green-500 rounded-lg text-white'>
+                <div className='card-body'>
+                    {/* konten edukasi */}
+                    <div className='flex flex-col items-center p-7 gap-5'>
+                        <img src='https://picsum.photos/100/100' alt="edukasi vertikultur" className='rounded-lg h-40 w-40 object-cover' />
+                        <p className='text-2xl font-semibold'>
+                        Edukasi Vertikultur
+                        </p>
+                        <p className='text-center'>
+                            Kami menyediakan materi lengkap seputar teknik pertanian vertikultur.
+                        </p>
+                    </div>
+                    
+                </div>
 
-          {/* Kartu 3 */}
-          <Card className="shadow-lg">
-            <Card.Img
-              variant="top"
-              src={Manajemen}
-              className="h-48 w-full object-cover rounded-t-lg"
-            />
-            <Card.Body>
-              <Card.Title className="text-lg font-bold text-neutral-800">
-                Panduan Manajemen Limbah
-              </Card.Title>
-              <Card.Text className="text-sm text-neutral-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </Card.Text>
-              <button className="bg-[#387F39] text-white px-4 py-2 mt-4 rounded-lg hover:bg-green-900 focus:outline-none">
-                Jelajahi
-              </button>
-            </Card.Body>
-          </Card>
+            </div>
+
+            {/* Manajemen Limbah */}
+            <div className='card bg-green-500 rounded-lg text-white'>
+                <div className='card-body'>
+                    {/* konten manajemen */}
+                    <div className='flex flex-col items-center p-7 gap-5'>
+                        <img src='https://picsum.photos/100/100' alt="edukasi vertikultur" className='rounded-lg h-40 w-40 object-cover' />
+                        <p className='text-2xl font-semibold'>
+                        Manajemen Limbah
+                        </p>
+                        <p className='text-center'>
+                            Kami memberikan solusi atas permasalahan limbah pertanian yang dihasilkan.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            {/* Chatbot AI */}
+            <div className='card bg-green-500 rounded-lg text-white'>
+                <div className='card-body'>
+                    {/* konten chatbot */}
+                    <div className='flex flex-col items-center p-7 gap-5'>
+                        <img src='https://picsum.photos/100/100' alt="edukasi vertikultur" className='rounded-lg h-40 w-40 object-cover' />
+                        <p className='text-2xl font-semibold'>
+                        Chatbot AI
+                        </p>
+                        <p className='text-center'>
+                            Layanan chatbot AI yang memungkinkan kamu tetap menyelesaikan masalah pertanian.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </div>
-      </div>
     </section>
-  );
+  )
 }
 
-export default SectionLayanan;

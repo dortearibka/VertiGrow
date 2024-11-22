@@ -1,17 +1,16 @@
 import React from 'react'
-import Logo from '/MSIB IL/Apalagi/src/assets/Logo/Logo Vertigrow Blok.png'
 
-export default function SectionTentang() {
+export default function SectionTentang2() {
   return (
-    <section className='bg-neutral-100 container'>
-        <div className='flex flex-col items-center py-16 gap-10'>
-            <h3 className='text-3xl font-semibold text-green-500'>
+    <section className='bg-teal-800'>
+        <div className='container flex flex-col items-center py-10 gap-10 text-white'>
+            <h3 className='text-3xl font-semibold'>
                 Apa itu Vertigrow?
             </h3>
             <p className='text-xl text-center'>
                 Vertigrow merupakan platform pertama yang berfokus pada edukasi pertanian modern, khususnya teknik vertikultur. Tujuan kami adalah memberdayakan anak muda untuk mencapai keberlangsungan sektor agrikultur di Indonesia. 
             </p>
-            <button className='bg-green-500 rounded-md w-52 px-2 py-2 text-white text-lg'>
+            <button className='bg-white rounded-md w-52 px-2 py-2 text-white text-lg'>
                 Pelajari selengkapnya
             </button>
         </div>
@@ -19,4 +18,3 @@ export default function SectionTentang() {
     </section>
   )
 }
-
