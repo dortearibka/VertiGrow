@@ -1,5 +1,6 @@
 # **VERTIGROW**
 to run this app
+
 npm run dev
 
 # React + Vite
